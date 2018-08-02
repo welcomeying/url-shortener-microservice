@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+      <title>URL Shortener</title>
+      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="/public/style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+      <div class="container">
+        <h2>API Project: URL Shortener Microservice</h2>
+        <h3>User Story: </h3>
+        <ol>
+          <li>To create a URL Shortner Microservice. Given a URL as a parameter, a JSON object will be returned with the shortened url link.</li>
+          <li>Clicking on the newly created shortened url will redirect you to the original link that was input.</li>
+          <li>If an Invalid url is entered, the JSON response will contain an error instead.</li>
+          
+        </ol>
+        
+        <h3>Short URL Creation </h3>
+        <form action="api/shorturl/new" method="POST">
+          <label for="url_input">URL to be shortened</label>
+          <input id="url_input" type="text" name="url" value="https://www.freecodecamp.com">
+          <input type="submit" value="POST URL">
+        </form>
+        <h3>Example Usage:</h3>
+        <li>
+          Post <code>https://www.freecodecamp.com</code> bove will return this JSON response: <code>{"original_url":"https://www.freecodecamp.com","short_url":1}</code>
+        </li>
+        <li><a href="https://bevel-scissor.glitch.me/api/shorturl/2">
+          https://bevel-scissor.glitch.me/api/shorturl/2 
+        </a>
+        <span>will redirect to: https://www.google.com</span>
+        </li>
+        <li>If an Invalid url is entered, the JSON response will be: <code>{"error":"invalid URL"}</code></li>
+      </div>
+      <div class="footer">
+        <p>
+          Code and design by YingH
+        </p>
+      </div>
+   </body>
+
+
+</html>

@@ -14,7 +14,7 @@ POST [project_url]/api/shorturl/new - body (urlencoded) :  url=https://www.googl
 
 #### Usage:
 
-[this_project_url]/api/shorturl/3
+[this_project_url]/api/shorturl/1
 
 #### Will redirect to:
 
